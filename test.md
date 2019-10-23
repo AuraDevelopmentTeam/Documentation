@@ -28,14 +28,6 @@ Officia irure in non voluptate adipisicing sit amet tempor duis dolore deserunt 
 quis. Enim aute anim labore proident laboris voluptate elit excepteur in. Ex labore nulla velit officia ullamco Lorem Lorem id do. Dolore ullamco ipsum magna
 dolor pariatur voluptate ipsum id occaecat ipsum. Dolore tempor quis duis commodo quis quis enim.
 
-## Math test
-
-$$
-    f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-$$
-
 ## Code test
 
 ```php
@@ -45,6 +37,29 @@ echo $ParsedownExtreme->text('Hello _Parsedown_!'); # prints: <p>Hello <em>Parse
 // you can also parse inline markdown only
 echo $ParsedownExtreme->line('Hello _Parsedown_!'); # prints: Hello <em>Parsedown</em>!
 ```
+
+```js
+onst Prism = require('prismjs');
+
+// The code snippet you want to highlight, as a string
+const code = `var data = 1;`;
+
+// Returns a highlighted HTML string
+const html = Prism.highlight(code, Prism.languages.javascript, 'javascript');
+```
+
+## Inline code test
+
+Text with inline `code`. This is great!  
+They can `also contain spaces!`
+
+## Math test
+
+$$
+    f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+$$
 
 ## Mermaid test
 
