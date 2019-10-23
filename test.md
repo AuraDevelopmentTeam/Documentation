@@ -53,6 +53,13 @@ const html = Prism.highlight(code, Prism.languages.javascript, 'javascript');
 Text with inline `code`. This is great!  
 They can `also contain spaces!`
 
+## TODO test
+
+- [ ] ToDos
+  - [x] Buy some salad
+  - [ ] Brush teeth
+  - [x] Drink some water
+
 ## Math test
 
 $$
