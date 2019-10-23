@@ -38,8 +38,10 @@ echo $ParsedownExtreme->text('Hello _Parsedown_!'); # prints: <p>Hello <em>Parse
 echo $ParsedownExtreme->line('Hello _Parsedown_!'); # prints: Hello <em>Parsedown</em>!
 ```
 
+Some text between!
+
 ```js
-onst Prism = require('prismjs');
+const Prism = require('prismjs');
 
 // The code snippet you want to highlight, as a string
 const code = `var data = 1;`;
@@ -68,7 +70,23 @@ $$
     \,d\xi
 $$
 
+More examples:
+
+$$
+    x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+$$
+
+Multiple expressions in one block:
+
+$$
+    \displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+
+    \displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
+
 ## Mermaid test
+
+### Sequence diagram
 
 %%
 sequenceDiagram
@@ -82,4 +100,75 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
+%%
+
+### Flowchart
+
+%%
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+%%
+
+### Gantt diagram
+
+%%
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2              :         des4, after des3, 5d
+%%
+
+### Class diagram
+
+%%
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<interface>> Class01
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
+%%
+
+### Git graph
+
+%%
+gitGraph:
+options
+{
+    "nodeSpacing": 150,
+    "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
 %%
