@@ -98,13 +98,17 @@ $$
     x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
 $$
 
-Multiple expressions in one block:
+### Multiple expressions in one block:
 
 $$
     \displaystyle \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
     \\
     \displaystyle \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 $$
+
+### Inline Math
+
+This is a text with an awesome formula $ \frac{\frac{1}{x}+\frac{1}{y}}{y-z} $ right in the middle!
 
 ## Mermaid test
 
