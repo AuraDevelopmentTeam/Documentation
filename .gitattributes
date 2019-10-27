@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 *         text=auto
-# Detect correct language
-*.md      linguist-language=Markdown
+# This is a documentation repo so Markdown files are the language and not documentation of the repo
+*.md      linguist-documentation=false
